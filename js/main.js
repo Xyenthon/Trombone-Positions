@@ -29,9 +29,6 @@ var position = 1,
   partial = 1;
 var partialFreq = partial * baseFreq[position - 1];
 
-//calculate pain on a scale of ten based on the distance from f
-var pain = Math.abs(Math.floor(partialFreq - 174.61) / 100) + 1); // this makes no sense, what are you trying to do?
-
 // freq: frequency of note
 function octave(freq) {
   return Math.floor(Math.log2(freq / 16.35))
